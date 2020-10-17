@@ -146,6 +146,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     messaging
 
+# Launcher3
+PRODUCT_PACKAGES += \
+    Launcher3
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
