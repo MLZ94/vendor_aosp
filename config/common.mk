@@ -148,7 +148,8 @@ PRODUCT_PACKAGES += \
 
 # Launcher3
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
+    Launcher3QuickStep
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
