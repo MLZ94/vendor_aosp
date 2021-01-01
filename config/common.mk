@@ -70,9 +70,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-# Include AOSP audio files
-include vendor/aosp/config/aosp_audio.mk
-
 # Include Lineage audio files
 include vendor/aosp/config/lineage_audio.mk
 

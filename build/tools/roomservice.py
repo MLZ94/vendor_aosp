@@ -256,7 +256,7 @@ if depsonly:
     if repo_path:
         fetch_dependencies(repo_path)
     else:
-        print("AOSPK - The Kraken Project")
+        print("HornbillOS - Devices")
 
     sys.exit()
 
