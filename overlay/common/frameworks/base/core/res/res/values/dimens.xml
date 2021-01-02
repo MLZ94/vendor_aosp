@@ -17,6 +17,13 @@
 -->
 <resources>
     <dimen name="config_dialogCornerRadius">8.0dip</dimen>
-    <dimen name="config_buttonCornerRadius">4.0dip</dimen>
+    <dimen name="config_buttonCornerRadius">16.0dip</dimen>
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
+
+    <dimen name="navigation_handle_radius">5dp</dimen>
+    <dimen name="navigation_handle_bottom">6dp</dimen>
+    <dimen name="navigation_handle_horizontal_margin">30dp</dimen>
+    <dimen name="navigation_handle_sample_horizontal_margin">10dp</dimen>
+    <dimen name="navigation_home_handle_width">72dp</dimen>
+
 </resources>
