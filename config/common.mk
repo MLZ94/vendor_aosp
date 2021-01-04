@@ -118,6 +118,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# AOSP packages
+PRODUCT_PACKAGES += \
+    BNotes
+
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
     7z \
