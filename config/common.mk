@@ -118,9 +118,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-# AOSP packages
+# Hornbill packages
 PRODUCT_PACKAGES += \
-    BNotes
+    BNotes \
+    SimpleGallery
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
