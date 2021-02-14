@@ -54,6 +54,18 @@ $(foreach f,$(wildcard vendor/aosp/prebuilt/common/etc/init/*.rc),\
 PRODUCT_COPY_FILES += \
     vendor/aosp/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED ?= true
+ifneq ($(TARGET_GAPPS_ARCH),arm64)
+TARGET_FACE_UNLOCK_SUPPORTED := false
+endif
+ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
+endif
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.sip.voip.xml
